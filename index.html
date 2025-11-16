@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        a { 
+            color: #80bfff; 
+            text-decoration: none; 
+        }
+
+        body {
+            margin: 0;
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 6px 12px;
+            transition: 0.2s;
+            border-radius: 6px;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+        }
+
+        .active {
+            background-color: #333;
+        }
+
+        .portofolio {
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .portofolio img {
+            border-radius: 12px;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            box-shadow: 0 4px 18px rgba(255,255,255,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .portofolio img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(255,255,255,0.15);
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 26px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #cfcfcf;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .portofolio img {
+                width: 160px;
+                height: 200px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+    <header>
+        <h1>Portofolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+    <div class="portofolio">
+        <img src="./images/WhatsApp Image 2025-11-16 at 16.22.53_8bfe3c6a.jpg" alt="Foto-Saya">
+        <h2>Web Developer | Computer Science Student</h2>
+
+        <p>
+            Saya adalah mahasiswa Teknik Informatika yang memiliki ketertarikan kuat dalam pengembangan web dan cybersecurity.
+            Saya terampil menggunakan HTML, CSS, JavaScript, serta Python untuk otomasi dan pemecahan masalah.
+            Saya senang membangun solusi web yang modern, responsif, aman, dan efisien.
+        </p>
+    </div>
+
+</body>
+</html>

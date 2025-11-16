@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        a { 
+            color: #80bfff; 
+            text-decoration: none; 
+        }
+
+        body {
+            margin: 0;
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 6px 12px;
+            transition: 0.2s;
+            border-radius: 6px;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+        }
+
+        .active {
+            background-color: #333;
+        }
+
+        .content {
+            background-color: #1a1a1a;
+            max-width: 900px;
+            margin: auto;
+            margin-top: 60px;
+            padding: 50px;
+            animation: fadeIn 1s ease;
+            line-height: 1.8;
+            text-align: center;
+            font-size: 18px;
+            color: #cfcfcf;
+            border-radius: 15px;
+        }
+
+        p{
+            pointer-events: none;
+        }
+
+        .deskripsi {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #d1d1d1;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1 style="margin:0; font-size:28px; letter-spacing:1px;">Portofolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="content">
+        <h2>About Me</h2>
+        <p>
+            Saya merupakan lulusan SMA PL Santo Yohanes Ketapang dan saat ini sedang menempuh pendidikan di Universitas Kristen Satya Wacana (UKSW).
+            Saya memiliki ketertarikan yang kuat dalam bidang Software Engineering, terutama dalam pengembangan aplikasi berbasis web.
+            Selama studi, saya pernah mengerjakan proyek Tugas Rancang (TR) bersama rekan saya, yang membantu saya memperkuat kemampuan teknis dan pemahaman dalam proses pengembangan software.
+            Keahlian saya berfokus pada HTML, CSS, JavaScript, dan Python, serta kemampuan dalam memecahkan masalah dan bekerja secara kolaboratif dalam tim.
+        </p>
+        <h2>Skills:</h2>
+        <p class="deskripsi"><br>  HTML: Intermediate <br> CSS: Intermediate <br> JavaScript: Intermediate <br> Python: Intermediate</p>
+        <h2>Academic Background</h2>
+        <p class="deskripsi">I am currently a student at Satya Wacana Christian University (SWCU)</p>
+        <h2>Contact</h2>
+        <p class="deskripsi">Email: dinosaputra23006@gmail.com <br></p>
+        <a href="https://github.com/shiraori23006" target="_blank">GitHub</a>
+
+        <h2>Development Process</h2>
+
+        <p class="deskripsi">
+            Proyek-proyek saya dikembangkan melalui proses yang dimulai dari perancangan fitur dan struktur sistem. 
+            <br> Setelah versi awal selesai dibuat, saya melakukan serangkaian pengujian <br> untuk memastikan fungsionalitas berjalan dengan baik.
+            <br> Berdasarkan hasil pengujian tersebut, saya melakukan beberapa perbaikan <br> hingga proyek mencapai kualitas yang diharapkan.
+        </p>
+    </div>
+</body>
+</html>

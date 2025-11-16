@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        a { 
+            color: #80bfff; 
+            text-decoration: none; 
+        }
+
+        body {
+            margin: 0;
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 6px 12px;
+            transition: 0.2s;
+            border-radius: 6px;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+        }
+
+        .active {
+            background-color: #333;
+        }
+
+        .projects {
+            text-align: center;
+            margin-top: 50px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .project-web, .project-python {
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            background-color: #1a1a1a;
+        }
+
+        .filter-buttons {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #1f1f1f;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        ul { 
+            list-style: none; 
+            padding: 0; 
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 25px 0;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <header>
+        <h1>Portofolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="projects">
+    <h1>My Projects</h1>
+
+    <div class="filter-buttons">
+        <button class="btn" onclick="filterProjects('all')">All</button>
+        <button class="btn" onclick="filterProjects('web')">Web</button>
+        <button class="btn" onclick="filterProjects('python')">Python</button>
+    </div>
+
+    <ul id="projectList">
+        <li class="project-web web">
+            <strong>Project 1:</strong>Website Warung Makan<br>
+            <p>Membuat aplikasi warung makan berbasis web menggunakan HTML, CSS, dan JavaScript untuk memudahkan pemesanan dan pengelolaan menu.</p>
+            <p>Saya membuat semua ini sendiri dan kesulitan dalam membuat Web ini yaitu sulit untuk mengdesign website yang baik dan modern</p>
+            <a href="https://shiraori23006.github.io/RM.-FineShyt/index.html">Lihat Projek</a>
+        </li>
+        
+        <li class="project-web web">
+            <strong>Project 2:</strong>Website PetShop<br>
+            <p>Website PetShop berbasis web menggunakan HTML, CSS, dan JavaScript namun belum bisa melakukan pemesanan.</p>
+            <p>Saya mendapat bagian mengerjakan bagian Beranda dan juga FAQ</p>
+            <p>Tantangan dalam membuat website ini adalah memastikan tampilan yang responsif dan user-friendly. Serta sulit untuk menentukan tema yang bagus agar tampak seperti website yang modern</p>
+            <a href="https://shiraori23006.github.io/TyDineGo/">Lihat Projek</a>
+        </li>
+
+        <li class="project-web python">
+            <strong>Project 3:</strong>Program Image Recognition YOLOv8 Python<br>
+            <p>Program ini menggunakan YOLOv8 untuk mengenali objek dalam gambar yang telah disiapkan dengan akurasi tinggi.</p>
+            <p>Kami mengerjakan nya bersama, cukup mudah karena kami mengikuti tutorial di YouTube.</p>
+            <p>Kesulitannya ada pada saat typo pada variable sehingga program tidak dapat dijalankan</p>
+            <img src="./images/image.png" width="400">
+        </li>
+
+    </ul>
+</div>
+
+<script>
+function filterProjects(category) {
+    let projects = document.querySelectorAll('.project-web');
+    projects.forEach(p => {
+        if (category === 'all') p.style.display = 'block';
+        else p.style.display = p.classList.contains(category) ? 'block' : 'none';
+    });
+}
+</script>
+
+</body>
+</html>
